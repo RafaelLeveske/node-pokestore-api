@@ -7,6 +7,12 @@ const FireStockController = require('./controllers/FireStockController');
 
 const routes = express.Router();
 
+routes.get('/', (req, res) => {
+  return res.json({
+    Pokestore: 'API',
+  });
+});
+
 routes.get('/dark_type', DarkTypeController.index);
 routes.get('/dark_type/:id', DarkTypeController.show);
 
