@@ -1,10 +1,11 @@
 const FireType = require('../models/FireType');
+const FireStock = require('../models/FireStock');
 
 module.exports = {
   async index(req, res) {
-    const fireTypes = await FireType.findAll();
+    const fireStock = await FireStock.findAll();
 
-    return res.json(fireTypes);
+    return res.json(fireStock);
   },
   async show(req, res) {
     const { id } = req.params;

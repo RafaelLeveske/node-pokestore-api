@@ -1,18 +1,18 @@
 const DarkType = require('../models/DarkType');
-const Stock = require('../models/Stock');
+const DarkStock = require('../models/DarkStock');
 
 module.exports = {
   async index(req, res) {
-    const stock = await Stock.findAll();
+    const darkStock = await DarkStock.findAll();
 
-    return res.json(stock);
+    return res.json(darkStock);
   },
   async show(req, res) {
     const { id } = req.params;
 
     const darkType = await DarkType.findByPk(id, {
       include: {
-        association: 'stocks',
+        association: 'darkStocks',
       },
     });
 

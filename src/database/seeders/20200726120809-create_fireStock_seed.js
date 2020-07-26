@@ -1,35 +1,35 @@
 module.exports = {
   up: async queryInterface =>
     queryInterface.bulkInsert(
-      'Stocks',
+      'FireStocks',
       [
         {
-          id: 197,
+          id: 4,
           amount: 3,
         },
         {
-          id: 198,
+          id: 5,
           amount: 5,
         },
         {
-          id: 215,
+          id: 6,
           amount: 2,
         },
         {
-          id: 228,
+          id: 37,
           amount: 1,
         },
         {
-          id: 229,
+          id: 38,
           amount: 5,
         },
         {
-          id: 248,
+          id: 58,
           amount: 10,
         },
       ],
       {},
     ),
 
-  down: queryInterface => queryInterface.bulkDelete('Stocks', null, {}),
+  down: queryInterface => queryInterface.bulkDelete('FireStocks', null, {}),
 };
