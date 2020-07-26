@@ -13,5 +13,12 @@ class FireType extends Model {
       },
     );
   }
+
+  static associate(models) {
+    this.hasMany(models.FireStock, {
+      foreignKey: 'id',
+      as: 'fireStocks',
+    });
+  }
 }
 module.exports = FireType;

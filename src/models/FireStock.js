@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 
-class Stock extends Model {
+class FireStock extends Model {
   static init(connection) {
     super.init(
       {
@@ -13,10 +13,10 @@ class Stock extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.DarkType, {
+    this.belongsTo(models.FireType, {
       foreignKey: 'id',
-      as: 'darkTypes',
+      as: 'fireTypes',
     });
   }
 }
-module.exports = Stock;
+module.exports = FireStock;

@@ -1,12 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 
-class DarkType extends Model {
+class DarkStock extends Model {
   static init(connection) {
     super.init(
       {
-        image: DataTypes.STRING,
-        title: DataTypes.STRING,
-        price: DataTypes.FLOAT,
+        amount: DataTypes.INTEGER,
       },
       {
         sequelize: connection,
@@ -15,10 +13,10 @@ class DarkType extends Model {
   }
 
   static associate(models) {
-    this.hasMany(models.DarkStock, {
+    this.belongsTo(models.DarkType, {
       foreignKey: 'id',
-      as: 'darkStocks',
+      as: 'darkTypes',
     });
   }
 }
-module.exports = DarkType;
+module.exports = DarkStock;

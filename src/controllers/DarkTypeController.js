@@ -12,7 +12,7 @@ module.exports = {
 
     const darkType = await DarkType.findByPk(id, {
       include: {
-        association: 'stocks',
+        association: 'darkStocks',
       },
     });
 
