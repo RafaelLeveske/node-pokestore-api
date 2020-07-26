@@ -5,11 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon",
-    "migrate": "sequelize db:migrate",
-    "migrate:undo:all": "sequelize db:migrate:undo:all",
-    "seed": "sequelize db:seed:all",
-    "seed:undo:all": "sequilize db:seed:undo:all"
+    "dev": "nodemon"
   },
   "dependencies": {
     "cors": "^2.8.5",
