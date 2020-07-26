@@ -16,7 +16,7 @@ module.exports = {
     password: 'DB_PASSWORD',
     database: 'DB_DATABASE',
     host: 'DB_HOST',
-    dialect: 'DB_CONNECTION',
+    dialect: 'postgres',
     protocol: 'postgres',
     port: 'DB_PORT',
   },
