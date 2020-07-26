@@ -6,7 +6,7 @@ const FireType = require('../models/FireType');
 const DarkStock = require('../models/DarkStock');
 const FireStock = require('../models/FireStock');
 
-const connection = new Sequelize(dbConfig);
+const connection = new Sequelize(dbConfig.production);
 
 DarkType.init(connection);
 FireType.init(connection);
