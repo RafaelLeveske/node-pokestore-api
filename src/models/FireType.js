@@ -7,6 +7,11 @@ class FireType extends Model {
         image: DataTypes.STRING,
         title: DataTypes.STRING,
         price: DataTypes.FLOAT,
+        description: DataTypes.STRING,
+        height: DataTypes.FLOAT,
+        weight: DataTypes.FLOAT,
+        category: DataTypes.STRING,
+        abilities: DataTypes.STRING,
       },
       {
         sequelize: connection,
