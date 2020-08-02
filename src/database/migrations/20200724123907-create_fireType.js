@@ -19,6 +19,26 @@ module.exports = {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
+      description: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      height: {
+        type: Sequelize.FLOAT,
+        allowNull: false,
+      },
+      weight: {
+        type: Sequelize.FLOAT,
+        allowNull: false,
+      },
+      category: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      abilities: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false,
